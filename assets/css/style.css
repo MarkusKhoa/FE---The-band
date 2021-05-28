@@ -1,3 +1,4 @@
+/* Common classes */
 *{
     padding: 0;
     margin: 0;
@@ -6,6 +7,7 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -14,6 +16,45 @@ body{
 
 .whiten-text{
     color: #fff !important;
+}
+
+.row{
+    margin: 0 -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col{
+    float: left;
+    padding: 0 8px;
+}
+
+.col-2{
+    width: 50%;
+}
+
+.col-3{
+    width: 33.33333%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
 }
 
 /* HEADER */
@@ -172,9 +213,6 @@ body{
 }
 
 #content .member-item{
-    width : 33.3333%;
-    float: left;
-    text-align: center;
     padding: 32px 0;
     margin-bottom: 15px;
 }
@@ -231,15 +269,9 @@ body{
 
 /* PLACES ZONE*/
 .places-list{
-    margin: 32px -8px 0;
+    margin-top: 32px;
     overflow: hidden;
     padding-bottom: 50px;
-}
-
-.place-item{
-    float: left;
-    width: 33.33333%;
-    padding: 0 8px;
 }
 
 .place-img{
@@ -287,7 +319,57 @@ body{
     font-weight: 400;
 }
 
-/* FOOTER ZONE */
-/* #footer{
+/* Contact section */
+.contact-content{
+    margin-top: 48px;
+}
 
-} */
+.contact-info{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info i{
+    padding-right: 16px;
+}
+
+.contact-form .form-control{
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn{
+    float: right;
+    padding: 10px 16px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.contact-form .form-submit-btn:hover{
+    cursor: pointer;
+}
+
+/* MAP */
+.map-section img{
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* FOOTER ZONE */
+#footer{
+    text-align: center;
+    padding: 64px 16px;
+}
+
+#footer .social-medias a{
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+#footer .copyright{
+    color: rgba(0,0,0,0.6);
+}
