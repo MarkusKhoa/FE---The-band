@@ -179,6 +179,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding-top: 64px;
+    padding-bottom: 112px;
     width: 800px;
     text-align: justify;
 }
@@ -372,4 +373,20 @@ body{
 
 #footer .copyright{
     color: rgba(0,0,0,0.6);
+}
+/* Responsive */
+
+/* Tablet Responsive */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #content .content-section{
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 64px;
+        padding-bottom: 112px;
+        width: 800px;
+        max-width: 100%;
+        text-align: justify;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
