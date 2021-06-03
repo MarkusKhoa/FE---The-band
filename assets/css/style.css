@@ -390,3 +390,9 @@ body{
         padding-right: 16px;
     }
 }
+
+@media (max-width: 740px) {
+    #nav li {
+        display: block;
+    }
+}
